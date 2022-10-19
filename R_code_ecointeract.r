@@ -68,11 +68,6 @@ z<-meuse$zinc
 c<-meuse$cadmium
 plot(z,c,col="blue", pch=21, cex=1.5) 
 
-#or plot(meuse$cadmium, meuse$zinc)
-# if you attach you do not need the dollar symbol!
-#attach(meuse)
-#plot(cadmium, zinc)
-#if u attached something you can easly detach it with the function detach(dataset)
 
 pairs(meuse)
 
