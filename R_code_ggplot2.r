@@ -30,3 +30,9 @@ ggplot(d, aes(x=virus, y=death))+geom_point(size=3, col="cyan 3", pch=17)+ geom_
 ggplot(d, aes(x = virus, y = death)) + geom_polygon()
 geom_polygon(d, aes(x = virus, y = death), col="cyan 3")
 
+21/10 LECTURE
+
+library(ggplot2)
+setwd("C:/Users/Martina/Desktop/Monitoring Ecosystem Changes and Functioning/R")
+covid <- read.table("covid_agg.csv", header=TRUE)
+covid
