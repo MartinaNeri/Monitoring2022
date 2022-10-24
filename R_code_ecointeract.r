@@ -1,6 +1,6 @@
 # Code for investigating relatioships among ecological variable
 
-#create a repository and then a file that has to be .(informatical lenguage u will use)
+#create a repository and then a file that has to be ."informatical lenguage u will use" (es. .R)
 
 # this is an array
 primates <- c(3, 5, 9, 15, 40)  
@@ -68,26 +68,21 @@ z<-meuse$zinc
 c<-meuse$cadmium
 plot(z,c,col="blue", pch=21, cex=1.5) 
 
+# oppure con il pacchetto ggplot--> ggplot(meuse, aes(x=z, y=c))+geom_point(col="cyan3")
 
 pairs(meuse)
 
 
+#####################################Da riguardare ####################################################à
+
 LECTURE 3
 
-> data(meuse)
-> c<-meuse$cadmium
-> z<- meuse$zink
-> plot(c,z, col="blue", cex=1)
-> 
+library(sp)
+data(meuse)
+c<-meuse$cadmium
+z<- meuse$zink
+plot(c,z, col="blue", cex=1)
 
+pairs(meuse[,3:6])
+pairs(~ cadmium + copper + lead + zinc, data=meuse)
 
-> pair(meuse[,3:6]
-+ pair(meuse[,3:6])
-Errore: simbolo inatteso in:
-"pair(meuse[,3:6]
-pair"
-> pair(meuse[,3:6])
-Errore in pair(meuse[, 3:6]) : non trovo la funzione "pair"
-> pairs(meuse[,3:6])
-> pairs(~ cadmium + copper + lead + zinc, data=meuse)
-> 
