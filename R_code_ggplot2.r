@@ -36,3 +36,5 @@ library(ggplot2)
 setwd("C:/Users/Martina/Desktop/Monitoring Ecosystem Changes and Functioning/R")
 covid <- read.table("covid_agg.csv", header=TRUE)
 covid
+summary(covid)
+
